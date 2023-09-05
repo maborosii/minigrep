@@ -3,6 +3,7 @@ use std::env;
 use std::process;
 
 fn main() {
+    let a = "demo".into();
     let config = Config::build(env::args()).unwrap_or_else(|err| {
         println!("parsing params err:{err}");
         process::exit(1);
